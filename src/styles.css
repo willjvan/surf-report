@@ -1,0 +1,162 @@
+.container{
+    font-family: 'Montserrat', sans-serif;
+    width:33%;
+    color:rgb(0, 0, 0);
+    margin:auto;
+}
+
+.container h1{
+    font-size: 23px;
+    font-weight: 600;   
+    text-align: center;
+}
+
+.container h2{
+    font-size: 18px;
+    font-weight: 300;   
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 11px;
+    font-weight: 300;   
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.clr{
+    clear:both;
+}
+
+/* #current-main {
+    float:left;
+    width:60%;
+    background-color: rgb(240, 240, 240);
+    margin:2px;
+}
+
+#current-main h3{
+    float:left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right:0px;
+    box-sizing:border-box;
+}
+
+#current-main #waveHeight{
+    font-size: 15px;
+}
+
+#current-main #windDir{
+    font-size: 10px;
+}
+
+#current-main #tide{
+    font-size: 10px;
+}
+
+#current-swell {
+    float:left;
+    width:60%;
+    background-color: rgb(240, 240, 240);
+    margin:2px;
+}
+
+#current-swell h3{
+    font-size: 12px;
+}
+
+#current-tide {
+    float:left;
+    width:50%;
+    background-color: rgb(240, 240, 240);
+    margin:2px;
+}
+
+#current-tide h3 {
+    font-size: 9px;
+    float:left;
+    width:50%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right:0px;
+    box-sizing:border-box;
+}
+
+#current-weather {
+    float:left;
+    width:50%;
+    background-color: rgb(240, 240, 240);
+    margin:2px;
+
+    box-sizing:border-box;
+
+} */
+
+.data-body{
+    height:200px;
+    background-color: rgb(240, 240, 240);
+        margin:auto;
+
+}
+
+.current-container{
+    display:grid;
+    grid-template-columns:3fr 6fr; 
+    grid-auto-rows:minmax(0px, auto);
+    grid-gap:.2em;
+    align-items:start;
+}
+
+#current1{
+    background-color: rgb(240, 240, 240);
+}
+
+#current1 #waveHeight{
+    font-size: 15px;
+}
+
+#current1 #windDir{
+    font-size: 10px;
+}
+
+#current1 #tide{
+    font-size: 10px;
+}
+
+#current2{
+    background-color: rgb(240, 240, 240);
+    align-self: stretch;
+}
+
+#current2 h3{
+    font-size: 11px;
+}
+
+#current3{
+    background-color: rgb(240, 240, 240);
+    grid-column:1/3;
+}
+#current3 h3 {
+    font-size: 9px;
+    float:left;
+    width:50%;
+    box-sizing:border-box;
+}
+
+#current4{
+    background-color: rgb(240, 240, 240);
+    grid-column:1/3;
+}
+
+#current4 h3{
+    font-size: 9px;
+    float:left;
+    width:33.3%;
+    box-sizing:border-box;
+}
+
+[id^='current'] h3 {
+    margin-top:7px;
+    margin-bottom:7px;
+}
