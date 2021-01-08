@@ -5,16 +5,35 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500, 600" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+
+<!-- <style>
+	#mapbox { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style> -->
 </head>
 <body>
     <div class = wrapper>
 
-        <div class = "map">
+        <div id="mapbox"></div>
+
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoid2lsbGp2YW4iLCJhIjoiY2tkbnU4OWYwMGVpczJ4bW1nY244dmg4NiJ9.MdLDOaFZSztwA83pYMj06g';
+        var map = new mapboxgl.Map({
+        container: 'mapbox', // container id
+        style: 'mapbox://styles/willjvan/ckjoqhmc442q618mr91fwieml', // style URL
+        center: [-124.3, 48.49], // starting position [lng, lat]
+        zoom: 8, // starting zoom
+        attributionControl: false
+        });
+        </script>
+
+        <!-- <div class = "map">
             <p>
                 
             </p>
-        </div>
-        
+        </div> -->
+
         <div class = "container">
             <h1>
                 SOMBRIO SURF REPORT
@@ -55,10 +74,9 @@
             <div class = "clr"></div>
 
             <div id = "FORECAST">
-                <h2>
+                <!-- <h2>
                     FORECAST
-                </h2>
-
+                </h2> -->
                 <div class = "swell">
                     <h3>
                         Swell
