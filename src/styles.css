@@ -12,6 +12,7 @@ body{
     top: 0; 
     bottom: 0; 
     width: 100%;
+    z-index:-1;
 }
 
 *:focus { outline: none; }
@@ -24,14 +25,36 @@ body{
     z-index:1;
     position: absolute;
 }
-.container{
+
+.button-container .slide {
+    top:10px;
+    left:10px;
+    z-index:0;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+.button-container a {
+    color:black;
+}
+
+
+.button-container .close {
+    top:10px;
+    left:365px;
+    z-index:2;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+.forecast-container{
     float:left;
     font-family: 'Montserrat', sans-serif;
-    max-width: 350px;
+    width: 350px;
     color:rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     z-index:1;
-    position: absolute;
+    position: relative;
     height:100vh;
     overflow:auto;
     padding-left: 20px;   
@@ -39,29 +62,29 @@ body{
  
 }
 
-.container::-webkit-scrollbar {
+.forecast-container::-webkit-scrollbar {
     display: none;
   }
   
-.container {
+.forecast-container {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
 
-.container h1{
+.forecast-container h1{
     font-size: 23px;
     font-weight: 600;   
     text-align: center;
     padding-top:10px;
 }
 
-.container h2{
+.forecast-container h2{
     font-size: 18px;
     font-weight: 300;   
     text-align: center;
 }
 
-.container h3 {
+.forecast-container h3 {
     font-size: 11px;
     font-weight: 300;   
     text-transform: uppercase;
