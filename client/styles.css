@@ -26,7 +26,7 @@ body{
     position: absolute;
 }
 
-.button-container .slide {
+.event-container .slide {
     top:10px;
     left:10px;
     z-index:0;
@@ -34,14 +34,23 @@ body{
     position: absolute;
 }
 
-.button-container a {
+.event-container a {
     color:black;
 }
 
 
-.button-container .close {
+.event-container .close {
     top:10px;
     left:365px;
+    z-index:2;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+
+.event-container .search {
+    top:10px;
+    left:40px;
     z-index:2;
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
